@@ -3,6 +3,18 @@
   "version": "1.0.1",
   "description": "Shared CI and tooling config for VotedForUs repos (semantic-release, gitmoji)",
   "type": "module",
+  "scripts": {
+    "extract:rules": "node scripts/extract-release-rules.mjs",
+    "prepublishOnly": "npm run extract:rules"
+  },
+  "files": [
+    "release-config.mjs",
+    "release-config-npm.mjs",
+    "release-rules.mjs",
+    "release.config.mjs",
+    "docs",
+    "scripts"
+  ],
   "exports": {
     ".": "./release-config.mjs",
     "./npm": "./release-config-npm.mjs"

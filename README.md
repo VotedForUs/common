@@ -28,3 +28,12 @@ export default { extends: '@votedforus/common' };
 ```
 
 Add `@votedforus/common` as a devDependency. All semantic-release plugins are transitive dependencies.
+
+## Commit message docs (AI agents)
+
+The package includes generated documentation for AI agents and tools:
+
+- `docs/gitmoji-rules.md` — Full emoji release rules (major/minor/patch). Use in any repo.
+- `docs/how-to-write-a-commit.md` — How to write commits for repos using this package. Reference from `.cursor/rules/` or similar.
+
+Regenerate from source: `npm run extract:rules`
