@@ -1,6 +1,6 @@
 {
   "name": "@votedforus/common",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Shared CI and tooling config for VotedForUs repos (semantic-release, gitmoji)",
   "type": "module",
   "scripts": {
