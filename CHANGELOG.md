@@ -1,3 +1,8 @@
+# [v1.0.8](https://github.com/VotedForUs/common/compare/v1.0.7...v1.0.8) (2026-03-18)
+
+## 🐛 Bug Fixes
+- [`d4b795f`](https://github.com/VotedForUs/common/commit/d4b795f)  try personal token
+
 # [v1.0.7](https://github.com/VotedForUs/common/compare/v1.0.6...v1.0.7) (2026-03-18)
 
 # [v1.0.6](https://github.com/VotedForUs/common/compare/v1.0.5...v1.0.6) (2026-03-18)
