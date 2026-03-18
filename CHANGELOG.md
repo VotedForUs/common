@@ -1,3 +1,8 @@
+# [v1.0.9](https://github.com/VotedForUs/common/compare/v1.0.8...v1.0.9) (2026-03-18)
+
+## 🐛 Bug Fixes
+- [`93006bc`](https://github.com/VotedForUs/common/commit/93006bc)  github_token all day
+
 # [v1.0.8](https://github.com/VotedForUs/common/compare/v1.0.7...v1.0.8) (2026-03-18)
 
 ## 🐛 Bug Fixes
