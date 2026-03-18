@@ -31,19 +31,24 @@ Use either the raw emoji character or the `:code:` shorthand — both are valid.
 
 | Emoji | Code | Release type | When to use |
 |-------|------|--------------|-------|
-| 🐛 | `:bug:` | **patch** | Fix a bug. |
-| 🚑️ | `:ambulance:` | **patch** | Critical hotfix. |
-| 🔒️ | `:lock:` | **patch** | Fix security or privacy issues. |
-| 🔧 | `:wrench:` | **patch** | Add or update configuration files. |
-| ♻️ | `:recycle:` | **patch** | Refactor code. |
-| ⬆️ | `:arrow_up:` | **patch** | Upgrade dependencies. |
-| 📝 | `:memo:` | **patch** | Add or update documentation. |
-| 🧪 | `:test_tube:` | **patch** | Add a failing test. |
-| 🚧 | `:construction:` | **patch** | Work in progress. |
 | 🎨 | `:art:` | **patch** | Improve structure / format of the code. |
+| ⚡️ | `:zap:` | **patch** | Improve performance. |
 | 🔥 | `:fire:` | **patch** | Remove code or files. |
-| 👷 | `:construction_worker:` | **patch** | Add or update CI build system. |
-| 📦️ | `:package:` | **patch** | Add or update compiled files or packages. |
+| 🐛 | `:bug:` | **patch** | Fix a bug. |
+| 📝 | `:memo:` | **patch** | Add or update documentation. |
+| 🚀 | `:rocket:` | **patch** | Deploy stuff. |
+| ✅ | `:white_check_mark:` | **patch** | Add, update, or pass tests. |
+| 🚧 | `:construction:` | **patch** | Work in progress. |
+| ♻️ | `:recycle:` | **patch** | Refactor code. |
+| ➕ | `:heavy_plus_sign:` | **patch** | Add a dependency. |
+| ➖ | `:heavy_minus_sign:` | **patch** | Remove a dependency. |
+| 👽️ | `:alien:` | **patch** | Update code due to external API changes. |
+| ♿️ | `:wheelchair:` | **patch** | Improve accessibility. |
+| 🍻 | `:beers:` | **patch** | Write code drunkenly. |
+| 🤡 | `:clown_face:` | **patch** | Mock things. |
+| 🥚 | `:egg:` | **patch** | Add or update an easter egg. |
+| ✈️ | `:airplane:` | **patch** | Improve offline support. |
+| ☑️ | `:ballot_box:` | **patch** | Add or update votes |
 
 *Other gitmojis also trigger patch — this table shows common ones.*
 

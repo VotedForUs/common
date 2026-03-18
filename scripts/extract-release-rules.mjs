@@ -7,20 +7,15 @@ import { writeFileSync, mkdirSync, readFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { gitmojis } from 'gitmojis';
-import { releaseRules } from '../release-rules.mjs';
+import { releaseRules, PATCH_DOCS_SUBSET, EXTRA_META } from '../release-rules.mjs';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, '..');
 const DOCS_DIR = join(ROOT, 'docs');
 
 const codeToMeta = new Map(gitmojis.map((g) => [g.code, { emoji: g.emoji, description: g.description }]));
-// Fallbacks for codes not in gitmojis package (e.g. :new:, :ballot_box:)
-const extraMeta = new Map([
-  [':new:', { emoji: '🆕', description: 'New feature or capability' }],
-  [':ballot_box:', { emoji: '☑️', description: 'Add or update votes' }],
-]);
 function getMeta(code) {
-  return codeToMeta.get(code) ?? extraMeta.get(code) ?? { emoji: '❓', description: code };
+  return codeToMeta.get(code) ?? EXTRA_META.get(code) ?? { emoji: '❓', description: code };
 }
 
 function row(code, releaseType, whenToUse = '') {
@@ -36,13 +31,6 @@ function table(codes, releaseType, whenColumn = 'When to use') {
   const rows = codes.map((code) => row(code, releaseType));
   return [header, sep, ...rows].join('\n');
 }
-
-// Curated subset for docs — full patch list (~100+) is too heavy for AI context
-const PATCH_DOCS_SUBSET = [
-  ':bug:', ':ambulance:', ':lock:', ':wrench:', ':recycle:', ':arrow_up:',
-  ':memo:', ':test_tube:', ':construction:', ':art:', ':fire:',
-  ':construction_worker:', ':package:',
-];
 
 const majorTable = table(releaseRules.major, 'major', 'When to use');
 const minorTable = table(releaseRules.minor, 'minor', 'When to use');
