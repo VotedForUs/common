@@ -1,3 +1,8 @@
+# [v1.0.5](https://github.com/VotedForUs/common/compare/v1.0.4...v1.0.5) (2026-03-18)
+
+## 🐛 Bug Fixes
+- [`9c15348`](https://github.com/VotedForUs/common/commit/9c15348)  persist credentia
+
 # [v1.0.4](https://github.com/VotedForUs/common/compare/v1.0.3...v1.0.4) (2026-03-18)
 
 # [v1.0.3](https://github.com/VotedForUs/common/compare/v1.0.2...v1.0.3) (2026-03-18)
