@@ -19,9 +19,6 @@
     ".": "./release-config.mjs",
     "./npm": "./release-config-npm.mjs"
   },
-  "bin": {
-    "semantic-release": "./node_modules/semantic-release/bin/semantic-release.js"
-  },
   "dependencies": {
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/git": "^10.0.1",
