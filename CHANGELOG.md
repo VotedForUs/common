@@ -1,3 +1,8 @@
+# [v1.1.0](https://github.com/VotedForUs/common/compare/v1.0.11...v1.1.0) (2026-03-19)
+
+## ✨ New Features
+- [`0b2d7af`](https://github.com/VotedForUs/common/commit/0b2d7af)  common releases ready
+
 # [v1.0.11](https://github.com/VotedForUs/common/compare/v1.0.10...v1.0.11) (2026-03-19)
 
 # [v1.0.10](https://github.com/VotedForUs/common/compare/v1.0.9...v1.0.10) (2026-03-19)
