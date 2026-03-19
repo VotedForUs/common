@@ -7,16 +7,24 @@ import { gitmojis } from 'gitmojis';
 export const MAJOR_EMOJIS = [':boom:'];
 export const MINOR_EMOJIS = [':sparkles:', ':new:'];
 export const EXTRA_PATCH_EMOJIS = [':ballot_box:'];
+/** Curated patch subset for docs — full list (~100+) is too heavy for AI context */
+export const PATCH_DOCS_SUBSET = [
+  ':art:', ':zap:', ':fire:', ':bug:', ':memo:', ':rocket:',
+  ':white_check_mark:', ':construction:', ':recycle:', ':heavy_plus_sign:',
+  ':heavy_minus_sign:', ':alien:', ':wheelchair:', ':beers:', ':clown_face:',
+  ':egg:', ':airplane:', ':ballot_box:',
+];
 
 /** Metadata for codes not in gitmojis package */
 export const EXTRA_META = new Map([
   [':new:', { emoji: '🆕', description: 'New feature or capability' }],
-  [':ballot_box:', { emoji: '☑️', description: 'Add or update votes' }],
+  [':ballot_box:', { emoji: '☑️', description: 'Add or update votes or legislators' }],
 ]);
 
 const reservedEmojis = new Set([...MAJOR_EMOJIS, ...MINOR_EMOJIS]);
 export const patchEmojis = [
-  ...gitmojis.map((g) => g.code).filter((code) => !reservedEmojis.has(code)),
+  ...gitmojis.map((g) => g.code).filter((code) => !reservedEmojis.has(code))
+  .filter((code) => PATCH_DOCS_SUBSET.includes(code)),
   ...EXTRA_PATCH_EMOJIS,
 ];
 
@@ -27,10 +35,3 @@ export const releaseRules = {
   patch: patchEmojis,
 };
 
-/** Curated patch subset for docs — full list (~100+) is too heavy for AI context */
-export const PATCH_DOCS_SUBSET = [
-  ':art:', ':zap:', ':fire:', ':bug:', ':memo:', ':rocket:',
-  ':white_check_mark:', ':construction:', ':recycle:', ':heavy_plus_sign:',
-  ':heavy_minus_sign:', ':alien:', ':wheelchair:', ':beers:', ':clown_face:',
-  ':egg:', ':airplane:', ':ballot_box:',
-];
