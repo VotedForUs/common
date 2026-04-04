@@ -1,3 +1,8 @@
+# [v1.1.1](https://github.com/VotedForUs/common/compare/v1.1.0...v1.1.1) (2026-04-04)
+
+## 🐛 Bug Fixes
+- [`d651be2`](https://github.com/VotedForUs/common/commit/d651be2)  Align patch gitmoji subset with semver table
+
 # [v1.1.0](https://github.com/VotedForUs/common/compare/v1.0.11...v1.1.0) (2026-03-19)
 
 ## ✨ New Features
