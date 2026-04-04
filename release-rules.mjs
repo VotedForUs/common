@@ -13,6 +13,11 @@ export const PATCH_DOCS_SUBSET = [
   ':white_check_mark:', ':construction:', ':recycle:', ':heavy_plus_sign:',
   ':heavy_minus_sign:', ':alien:', ':wheelchair:', ':beers:', ':clown_face:',
   ':egg:', ':airplane:', ':ballot_box:',
+  // Align with VotedForUs gitmoji → semver (patch) table; were missing from curated subset
+  ':wrench:',
+  ':ambulance:',
+  ':lock:',
+  ':arrow_up:',
 ];
 
 /** Metadata for codes not in gitmojis package */

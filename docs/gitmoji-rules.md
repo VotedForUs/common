@@ -48,7 +48,11 @@ Use either the raw emoji character or the `:code:` shorthand — both are valid.
 | 🤡 | `:clown_face:` | **patch** | Mock things. |
 | 🥚 | `:egg:` | **patch** | Add or update an easter egg. |
 | ✈️ | `:airplane:` | **patch** | Improve offline support. |
-| ☑️ | `:ballot_box:` | **patch** | Add or update votes |
+| ☑️ | `:ballot_box:` | **patch** | Add or update votes or legislators |
+| 🔧 | `:wrench:` | **patch** | Add or update configuration files. |
+| 🚑️ | `:ambulance:` | **patch** | Critical hotfix. |
+| 🔒️ | `:lock:` | **patch** | Fix security or privacy issues. |
+| ⬆️ | `:arrow_up:` | **patch** | Upgrade dependencies. |
 
 *Other gitmojis also trigger patch — this table shows common ones.*
 
